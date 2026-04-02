@@ -77,10 +77,6 @@ app.get("/v1/senai/dados/capital/brasil", function(request,response){
 app.get("/v1/senai/dados/capital/estados/:uf", function(request,response){
     let sigla = request.params.uf
     let estado = estadCidade.getCapitalEstado(sigla)
-    response.json(estado)
-    //console.log(request.params.uf) 
-    response.status(200)
-
 
     if (estado){
         //console.log(request.params.uf) 
@@ -161,6 +157,8 @@ app.get("/v1/senai/help", function(request, response){
         ]
 
     }
+    response.status(200)
+    response.json(docAPI)
 })
 
 
