@@ -19,7 +19,7 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 2. Acesse a pasta do projeto:
 
 ```bash
-cd seu-repositorio
+cd API-ESTADOS-BR
 ```
 
 3. Instale as dependências:
